@@ -1,0 +1,97 @@
+/* General body styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1b1b2f; /* Dark background */
+  color: #ecf0f1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container for the app */
+.App {
+  background-color: #162447; /* Darker blue background */
+  border-radius: 10px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px; /* Centering the form with a max-width */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+  text-align: center; /* Center text inside the form */
+  position: relative;
+}
+
+/* Styling for the heading */
+h1 {
+  color: #e94560; /* Highlight color for the title */
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Styling the form fields */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #4e4e50; /* Light border for contrast */
+  border-radius: 5px;
+  background-color: #0f3460; /* Dark input background */
+  color: #ecf0f1;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #e94560; /* Highlight border on focus */
+}
+
+/* Styling the submit button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #e94560; /* Red highlight button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4d6d; /* Lighter red on hover */
+}
+
+button:disabled {
+  background-color: #444; /* Gray when disabled */
+  cursor: not-allowed;
+}
+
+/* Error message styling */
+.error {
+  color: #f25c54; /* Bright red for errors */
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Result message styling */
+.result {
+  color: #22d1ee; /* Cyan color for result */
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Small tweaks for mobile responsiveness */
+@media (max-width: 480px) {
+  .App {
+    padding: 30px 20px;
+  }
+}
